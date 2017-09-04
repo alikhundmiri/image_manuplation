@@ -1,7 +1,7 @@
-# image_manuplation
-all the scripts written to manuplate images, such as image blur, image resize, or image resolution manager
+# Image Manuplation
+all the scripts written for image manuplation, such as blur, resize, or image resolution manager.
 ## Created for personal Use
-I wrote these scripts to learn how Pillow works, but if you feel you can use it for your personal use, you are very much welcome.
+All these scripts were written to learn how Pillow works, but if you feel you can use it for your personal use, you are very much welcome.
 
 ## How to use
 ### [desktop_image_blurrer.py](https://github.com/alikhundmiri/image_manuplation/blob/master/desktop_image_blurrer.py)
