@@ -2,25 +2,48 @@ from PIL import Image
 import os
 import sys
 
+
+
+# Load image from internet, This should later be turned to "load from AWS"
+# give option to resize
+# save image to desktop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # All your images should be here
 BASE_DIR = '/Users/alikhundmiri/Desktop/'
 DESKFILE = "_CUSTOM_IMAGES"
-IMAGE_EXTENSIONS = ['.png','.jpg','.jpeg']
-sizes = [(1000,1000), (600, 600), (300, 180), (30,30)]
+IMAGE_EXTENSIONS = ['.png', '.jpg', '.jpeg']
+sizes = [(300, 180), (600, 600), (1000, 1000)]
+
 
 def image_resizer():
     for f in os.listdir(BASE_DIR):
         # check if the files are image
         if f.endswith(tuple(IMAGE_EXTENSIONS)):
 
-            print("Working on :\t"+f)
+            print("Working on :\t" + f)
             # Make the image object
-            i = Image.open(BASE_DIR+f)
+            i = Image.open(BASE_DIR + f)
             # split the image name
             fname, fext = os.path.splitext(f)
 
             for si in sizes:
-                size_name = 'x'.join(str(s) for s in si) 
+                size_name = 'x'.join(str(s) for s in si)
                 i.thumbnail(tuple(si))
                 i.save('{}{}/{}/{}_{}{}'.format(BASE_DIR, DESKFILE, size_name, fname, size_name, fext))
                 print("\t\t\t\t\t " + "Created \t " + size_name)
@@ -31,8 +54,9 @@ def image_resizer():
             print("\t\t\t\t\t ORIGINAL\t moved to " + str(DESKFILE) + "\n")
             print("---------------------------------------------------------------------------------")
 
-        # else:
-        #     print("cant work on\t:\t" + f)
+            # else:
+            #     print("cant work on\t:\t" + f)
+
 
 def create_folder():
     f = DESKFILE
@@ -44,10 +68,12 @@ def create_folder():
     print("---------------------------------------------------------------------------------")
     os.chdir(f)
 
+
 def change_image_dir():
     for f in os.listdir(BASE_DIR):
-        if f. endswith(IMAGE_EXTENSIONS):
+        if f.endswith(IMAGE_EXTENSIONS):
             pass
+
 
 def create_sub_folders():
     folders = list(sizes)
@@ -71,7 +97,7 @@ if __name__ == "__main__":
         pass
     else:
         sys.exit("Closing the program")
-    
+
     create_folder()
     # change_image_dir()
     create_sub_folders()

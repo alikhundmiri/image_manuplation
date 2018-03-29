@@ -1,6 +1,6 @@
 from PIL import Image, ImageFilter
-
 import os
+
 # All your images should be here
 BASE_DIR = '/Users/alikhundmiri/Desktop/blur_this/'
 os.chdir(BASE_DIR)
