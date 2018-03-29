@@ -13,9 +13,9 @@ This script's main purpose is to move RAW files ending with format `.NEF` to a n
 
 ### how to use:
 1. Change the BASE_DIR if you wish.
-2. Inside the BASE_DIR make a folder and paste all the new images from DSLR
+2. Inside the BASE_DIR make a folder `new_images` and paste all the new images from DSLR
 3. Run the Script
-4. Enter the foolder name you created
+4. Enter the folder name you created: `new_images`
 5. ???
 6. Profit
 
