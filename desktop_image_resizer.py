@@ -5,7 +5,7 @@ import sys
 # All your images should be here
 BASE_DIR = '/Users/alikhundmiri/Desktop/'
 DESKFILE = "_CUSTOM_IMAGES"
-IMAGE_EXTENSIONS = ['.png','.jpg','.jpeg']
+IMAGE_EXTENSIONS = ['.png','.jpg','.jpeg',]
 sizes = [(1000,1000), (600, 600), (300, 180), (30,30)]
 
 def image_resizer():
@@ -46,7 +46,7 @@ def create_folder():
 
 def change_image_dir():
     for f in os.listdir(BASE_DIR):
-        if f. endswith(IMAGE_EXTENSIONS):
+        if f.endswith(tuple(IMAGE_EXTENSIONS)):
             pass
 
 def create_sub_folders():
@@ -62,18 +62,32 @@ def create_sub_folders():
 
 
 if __name__ == "__main__":
+
+    bypass_UI = False
+    input_1 = None
+
+
+    if len(sys.argv) > 1:
+        input_1 = sys.argv[1]
+        if input_1 == 'auto':
+            bypass_UI = True
+
+    
     os.chdir(BASE_DIR)
-    print("\n\n============================ I N S T R U C T I O N S ============================\n\n")
-    print("Place all the images on the desktop, make sure the format is " + ", ".join(IMAGE_EXTENSIONS) + ".\n\n")
-    signal = input("Whenever you are ready, Press 'y' to continue or anything else to exit.")
-    print("---------------------------------------------------------------------------------")
-    if signal == 'y':
-        pass
-    else:
-        sys.exit("Closing the program")
+
+    
+    if not bypass_UI:
+        print("\n\n============================ I N S T R U C T I O N S ============================\n\n")
+        print("Place all the images on the desktop, make sure the format is " + ", ".join(IMAGE_EXTENSIONS) + ".\n\n")
+        signal = input("Whenever you are ready, Press 'y' to continue or anything else to exit.")
+        print("---------------------------------------------------------------------------------")
+        if signal == 'y':
+            pass
+        else:
+            sys.exit("Closing the program")
     
     create_folder()
-    # change_image_dir()
+    change_image_dir()
     create_sub_folders()
     image_resizer()
     print("\n\n======================== T H A T ' S   A L L   F O L K S ========================\n\n")
