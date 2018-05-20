@@ -32,50 +32,28 @@ The files are sorted according to the format, and are placed in a folder named a
 
 ### File Structure
 
-   Desktop
-
-   ├── _ARCHIVES
-
-   │     ├── _AUDIOS ['.mp3',]
-
-   │     │     ├── _DATE_MONTH_YEAR
-
-   │     │     │    ├── Your audio file 1
-   
-   │     │     │    ├── Your audio file 2
-   
-   │     │     │    └── Your audio file nth
-   
-   │     ├── _DOCUMENTS ['.pdf','.txt',]
-   
-   │     │     ├── _DATE_MONTH_YEAR
-   
-   │     │     │     ├── Your document file 1
-   
-   │     │     │     ├── Your document file 2
-   
-   │     │     │     └── Your document file nth
-   
-   │     ├── _IMAGES ['.png','.jpg','.jpeg',]
-   
-   │     │     ├── _DATE_MONTH_YEAR
-   
-   │     │     │     ├── Your image file 1
-   
-   │     │     │     ├── Your image file 2
-   
-   │     │     │     └── Your image file nth
-   
-   │     ├── _VIDEOS [".mp4", '.avi', '.mkv',]
-   
-   │     │     ├── _DATE_MONTH_YEAR
-   
-   │     │     │     ├── Your video file 1
-   
-   │     │     │     ├── Your video file 2
-   
-   │     │     │     └── Your video file nth
-   
+	   Desktop
+	   ├── _ARCHIVES
+	   │     ├── _AUDIOS ['.mp3',]
+	   │     │     ├── _DATE_MONTH_YEAR
+	   │     │     │    ├── Your audio file 1
+	   │     │     │    ├── Your audio file 2
+	   │     │     │    └── Your audio file nth
+	   │     ├── _DOCUMENTS ['.pdf','.txt',]
+	   │     │     ├── _DATE_MONTH_YEAR
+	   │     │     │     ├── Your document file 1
+	   │     │     │     ├── Your document file 2
+	   │     │     │     └── Your document file nth
+	   │     ├── _IMAGES ['.png','.jpg','.jpeg',]
+	   │     │     ├── _DATE_MONTH_YEAR
+	   │     │     │     ├── Your image file 1
+	   │     │     │     ├── Your image file 2
+	   │     │     │     └── Your image file nth
+	   │     ├── _VIDEOS [".mp4", '.avi', '.mkv',]
+	   │     │     ├── _DATE_MONTH_YEAR
+	   │     │     │     ├── Your video file 1
+	   │     │     │     ├── Your video file 2
+	   │     │     │     └── Your video file nth
 
 
 ## [desktop_image_blurrer.py](https://github.com/alikhundmiri/image_manuplation/blob/master/desktop_image_blurrer.py)
