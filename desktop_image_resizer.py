@@ -6,7 +6,7 @@ import sys
 BASE_DIR = '/Users/alikhundmiri/Desktop/'
 DESKFILE = "_CUSTOM_IMAGES"
 IMAGE_EXTENSIONS = ['.png','.jpg','.jpeg',]
-sizes = [(1000,1000), (600, 600), (300, 180), (30,30)]
+sizes = [(200,200)]
 
 def image_resizer():
     for f in os.listdir(BASE_DIR):
